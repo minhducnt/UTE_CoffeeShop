@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8535A5B-FFC5-4DEF-881B-4D352DF2F75A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CoffeeShop</RootNamespace>
+    <AssemblyName>CoffeeShop</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainMenu\FAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu\FAccount.Designer.cs">
+      <DependentUpon>FAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FLoading.Designer.cs">
+      <DependentUpon>FLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FRegister.Designer.cs">
+      <DependentUpon>FRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\FBillInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\FBillInfo.Designer.cs">
+      <DependentUpon>FBillInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\FRevenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\FRevenue.Designer.cs">
+      <DependentUpon>FRevenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\FStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\FStaff.Designer.cs">
+      <DependentUpon>FStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\FStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic\FStatistic.Designer.cs">
+      <DependentUpon>FStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FCategory.Designer.cs">
+      <DependentUpon>FCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FCheckOut.Designer.cs">
+      <DependentUpon>FCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableManager\FEditTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableManager\FEditTable.Designer.cs">
+      <DependentUpon>FEditTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FMenu.Designer.cs">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableManager\FMergeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableManager\FMergeTable.Designer.cs">
+      <DependentUpon>FMergeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableManager\FSwitchTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableManager\FSwitchTable.Designer.cs">
+      <DependentUpon>FSwitchTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableManager\FTableManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableManager\FTableManager.Designer.cs">
+      <DependentUpon>FTableManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu\FMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu\FMainMenu.Designer.cs">
+      <DependentUpon>FMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainMenu\FAccount.resx">
+      <DependentUpon>FAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FLoading.resx">
+      <DependentUpon>FLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FRegister.resx">
+      <DependentUpon>FRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FBillInfo.resx">
+      <DependentUpon>FBillInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FRevenue.resx">
+      <DependentUpon>FRevenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\FStaff.resx">
+      <DependentUpon>FStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\FStatistic.resx">
+      <DependentUpon>FStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FCategory.resx">
+      <DependentUpon>FCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FCheckOut.resx">
+      <DependentUpon>FCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableManager\FEditTable.resx">
+      <DependentUpon>FEditTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FMenu.resx">
+      <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableManager\FMergeTable.resx">
+      <DependentUpon>FMergeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableManager\FSwitchTable.resx">
+      <DependentUpon>FSwitchTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableManager\FTableManager.resx">
+      <DependentUpon>FTableManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu\FMainMenu.resx">
+      <DependentUpon>FMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUL\BUL.csproj">
+      <Project>{1c0d9146-f9a3-46b6-bba1-9dfa85692e30}</Project>
+      <Name>BUL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PUBLIC\PUBLIC.csproj">
+      <Project>{ee78df13-c28d-4b3d-a1f1-3273455ac1fb}</Project>
+      <Name>PUBLIC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Greg-Barnes-Vintage-Kitchen-Mug.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
