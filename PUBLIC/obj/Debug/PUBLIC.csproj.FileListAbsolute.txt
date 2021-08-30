@@ -1,0 +1,12 @@
+C:\Users\tungn\Desktop\CoffeeShop\PUBLIC\bin\Debug\PUBLIC.dll
+C:\Users\tungn\Desktop\CoffeeShop\PUBLIC\bin\Debug\PUBLIC.pdb
+C:\Users\tungn\Desktop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.csproj.CoreCompileInputs.cache
+C:\Users\tungn\Desktop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.dll
+C:\Users\tungn\Desktop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.pdb
+C:\Users\tungn\Desktop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.csproj.AssemblyReference.cache
+C:\Users\tungn\Desktop\CoffeeShop\CoffeeShop\PUBLIC\bin\Debug\PUBLIC.dll
+C:\Users\tungn\Desktop\CoffeeShop\CoffeeShop\PUBLIC\bin\Debug\PUBLIC.pdb
+C:\Users\tungn\Desktop\CoffeeShop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.csproj.AssemblyReference.cache
+C:\Users\tungn\Desktop\CoffeeShop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.csproj.CoreCompileInputs.cache
+C:\Users\tungn\Desktop\CoffeeShop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.dll
+C:\Users\tungn\Desktop\CoffeeShop\CoffeeShop\PUBLIC\obj\Debug\PUBLIC.pdb
